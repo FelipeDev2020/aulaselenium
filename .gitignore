@@ -1,0 +1,60 @@
+# =============== Maven ===============
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =============== IntelliJ IDEA ===============
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# =============== Java / Compilados ===============
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# =============== Logs e arquivos temporários ===============
+*.log
+logs/
+temp/
+tmp/
+
+# =============== Relatórios de teste (JUnit + Surefire) ===============
+surefire-reports/
+test-output/
+failsafe-reports/
+**/target/surefire-reports/
+**/target/test-classes/
+
+# =============== Drivers do Selenium (caso baixe manualmente) ===============
+chromedriver*
+geckodriver*
+msedgedriver*
+IEDriverServer*
+operadriver*
+safaridriver*
+webdriver.*
+
+# =============== Arquivos do sistema ===============
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =============== Arquivos sensíveis ===============
+.env
+*.properties.local
+credentials.json
