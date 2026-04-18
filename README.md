@@ -51,7 +51,7 @@ O curso ensina a **criar testes automatizados do zero** para aplicações web us
 | **Selenium Grid**   | —                                         | Execução distribuída             |
 | **JUnit**           | 4/5                                       | Framework de testes              |
 | **Maven**           | 3.x                                       | Gerenciamento de dependências    |
-| **Eclipse**         | —                                         | IDE principal                    |
+| **intellij**         | —                                         | IDE principal                    |
 | **Saucelabs**       | —                                         | Execução na nuvem                |
 
 ---
