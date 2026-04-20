@@ -54,6 +54,4 @@ O curso ensina a **criar testes automatizados do zero** para aplicações web us
 | **intellij**         | —                                         | IDE principal                    |
 | **Saucelabs**       | —                                         | Execução na nuvem                |
 
----
 
-## 📁 Estrutura do Repositório
