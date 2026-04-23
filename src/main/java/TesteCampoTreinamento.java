@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -89,7 +90,7 @@ public class TesteCampoTreinamento {
         Assert.assertEquals(8, options.size());
 
         boolean encontrou = options.stream()
-                        .anyMatch(p -> p.getText().equals("Mestrado"));
+                .anyMatch(p -> p.getText().equals("Mestrado"));
 
         Assert.assertTrue(encontrou);
 
@@ -129,6 +130,36 @@ public class TesteCampoTreinamento {
         botao.click();
 
         Assert.assertEquals("Obrigado!", botao.getAttribute("value"));
+        driver.quit();
+    }
+
+    @Test
+    @Ignore
+    public void deveInteragirComLinks() {
+        /// *** Test para clicar no link do site
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().window().setSize(new Dimension(1900, 750));
+        driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+
+        driver.findElement(By.linkText("Voltar")).click();
+        //Assert.fail();
+        Assert.assertEquals("Voltou!", driver.findElement(By.id("resultado")).getText());
+        driver.quit();
+    }
+
+    @Test
+    public void deveBuscarTextoNaPagina(){
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().window().setSize(new Dimension(1900, 750));
+        driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+
+        //System.out.println(driver.findElement(By.tagName("body")).getText());
+
+        //Assert.assertTrue(driver.findElement(By.tagName("body")).getText().contains("Campo de Treinamento"));
+
+        Assert.assertEquals("Campo de Treinamento", driver.findElement(By.tagName("h3")).getText());
+        Assert.assertEquals("Cuidado onde clica, muitas armadilhas...", driver.findElement(By.className("facilAchar")).getText());
+
         driver.quit();
     }
 }
