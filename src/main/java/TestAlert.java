@@ -22,7 +22,7 @@ public class TestAlert {
         alert.accept();
 
         driver.findElement(By.id("elementosForm:nome")).sendKeys(texto);
-        driver.quit();
+        //driver.quit();
 
     }
 
