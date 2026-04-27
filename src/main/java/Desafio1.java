@@ -42,12 +42,11 @@ public class Desafio1 {
 
         // ===== Sexo =====
         WebElement sexo = driver.findElement(By.id("elementosForm:sexo:0"));
-        try {
-            // Pausa por 2 segundos (2000 milissegundos)
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(2000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         sexo.click();
         Assert.assertTrue(sexo.isSelected());
 
